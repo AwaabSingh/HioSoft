@@ -222,7 +222,7 @@ header {
 
 @media (max-width: 575px) {
     .banner .container .row #head {
-        font-weight:  ;
+        
         color: #bdcff8;
       
         text-align: center;
@@ -622,7 +622,6 @@ a {
 
     @media only screen and (max-width: 600px) {
         .brand {
-           padding-top: 10%;
            padding-bottom: 80%;
            width: auto;
         }
@@ -632,6 +631,12 @@ a {
         }
     }
 
+    /* @media only screen and (max-width: 341px) {
+        .brand .logos-flex-container .down {
+            padding-bottom: 150%;
+            width: auto;
+         }
+    } */
     @media only screen and (max-device-width: 340px) {
         .brand {
             margin-top: 70%;
@@ -641,6 +646,10 @@ a {
  
          .brand h1 {
              font-size: 30px;
+         }
+
+         .site-footer {
+             margin-top: 10%;
          }
     }
     
@@ -729,6 +738,7 @@ a {
 {
   .site-footer
   {
+      padding-top: 25%;
     padding-bottom:0
   }
   .site-footer .copyright-text,.site-footer .social-icons
