@@ -636,6 +636,7 @@ a {
     @media only screen and (max-width: 600px) {
         .brand {
            margin-top: 70%;
+           width: auto;
         }
 
         .brand h1 {
