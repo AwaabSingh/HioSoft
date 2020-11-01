@@ -172,9 +172,11 @@ header {
     padding: 250px 0 200px;
 } 
 
-.banner .container .row h1 {
+.banner .container .row #head {
     font-weight:  800;
     color: #bdcff8;
+    font-size: 30px;
+    padding-right: 12rem;
 }
 .banner .container .row h2 {
     font-weight:  800;
@@ -219,6 +221,21 @@ header {
 }
 
 @media (max-width: 575px) {
+    .banner .container .row #head {
+        font-weight:  ;
+        color: #bdcff8;
+      
+        text-align: center;
+    }
+    .banner .container .row h2 {
+        font-weight:  800;
+        font-size: 25px;
+        color: #dbdbdb;
+    }
+    .banner .container .row p {
+        font-weight:  500;
+        color: #dbdbcd;
+    }
     .container .banner-form-group {
         padding: 50px 15px 45px;
     }
@@ -539,40 +556,9 @@ a {
     text-transform: uppercase;
 }
 
-/* .sec-2 .container .card1 .info {
-    display:  inline-block;
-    position: absolute;
-    top: -2px;
-    right: -2px;
-    padding:  0.5rem 1.1rem;
-    border-radius:  50%;
-    cursor: pointer;
-    z-index:  2;
-    opacity: 1;
-    transition: opacity 300ms ease-out;
-    color: #606060;
-}
 
-.sec-2 .container .card1 .info:hover {
-    opacity: 0;
-}
 
-.sec-2 .container .card1 .answer {
-    display: grid;
-    place-items: center;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    padding:  2em;
-    height: 100%;
-    border-radius: 1rem;
-    background-color: #41f2ff;
-    clip: circle(12% at 100% 0%);
-    transition: all 300ms ease-in-out;
-    z-index: 1;
-} */
+
 
 @media only screen and (max-width: 600px) {
     .sec-2 .container {
@@ -587,6 +573,7 @@ a {
 .brand {
     background-color: #F0F0F0;
     height: 30vh;
+    font-size: 800;
 }
 .brand h1 {
     text-align: center;
@@ -635,13 +622,26 @@ a {
 
     @media only screen and (max-width: 600px) {
         .brand {
-           margin-top: 70%;
+           padding-top: 10%;
+           padding-bottom: 80%;
            width: auto;
         }
 
         .brand h1 {
             font-size: 30px;
         }
+    }
+
+    @media only screen and (max-device-width: 340px) {
+        .brand {
+            margin-top: 70%;
+            padding-top:100% ;
+            height: 50vh;
+         }
+ 
+         .brand h1 {
+             font-size: 30px;
+         }
     }
     
     .site-footer
@@ -806,4 +806,123 @@ a {
     margin-right:0;
     font-weight:600
   }
+
+ 
 }
+
+@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {
+    .container .banner-form .p {
+        font-size: 20px;
+    }
+}
+
+.main{
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  h1 {
+      font-size: 24px;
+      font-weight: 400;
+      text-align: center;
+  }
+  
+  img {
+    height: auto;
+    max-width: 100%;
+    vertical-align: middle;
+  }
+  
+  .btn {
+    color: #ffffff;
+    padding: 0.8rem;
+    font-size: 14px;
+    text-transform: uppercase;
+    border-radius: 4px;
+    font-weight: 400;
+    display: block;
+    width: 100%;
+    cursor: pointer;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: transparent;
+  }
+  
+  .btn:hover {
+    background-color: rgba(255, 255, 255, 0.12);
+  }
+  
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .cards_item {
+    display: flex;
+    padding: 1rem;
+  }
+  
+  @media (min-width: 40rem) {
+    .cards_item {
+      width: 50%;
+    }
+  }
+  
+  @media (min-width: 56rem) {
+    .cards_item {
+      width: 33.3333%;
+    }
+  }
+  
+  .info-card {
+      margin-top: 50px;
+  }
+  
+  .info-card h1 {
+      font-size: 30px;
+      font-weight: 800;
+  }
+  .info-card p {
+      text-align: center;
+      font-weight: 500;
+  }
+  .info-card .card {
+    background-color: white;
+    border-radius: 0.25rem;
+    box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  
+  .info-card .card_content {
+    padding: 1rem;
+    background-color: #abe9cd;
+    background-image: linear-gradient(315deg, #abe9cd 0%, #3eadcf 74%);
+
+  }
+  
+  .info-card .card_title {
+    color: #ffffff;
+    font-size: 1.1rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    margin: 0px;
+  }
+  
+  .info-card .card_text {
+    color: #ffffff;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    margin-bottom: 1.25rem;    
+    font-weight: 400;
+  }
+  .info-card .made_by{
+    font-weight: 400;
+    font-size: 13px;
+    margin-top: 35px;
+    text-align: center;
+  }
